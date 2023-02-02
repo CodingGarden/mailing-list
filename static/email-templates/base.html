@@ -15,9 +15,20 @@
                 margin: 0;
                 color: #444;
             }
-
+            .wrap, .darkmode, .darkmode div {
+                background-color: #1e1e1e;
+                color: white;
+                background-image: linear-gradient(#ffffff,#ffffff) !important;
+            }
+            .darkmode p { /* Add other selectors for other text elements */
+                color: white;
+                -webkit-text-fill-color: #fff !important;
+            }
+            
             .wrap {
-                background-color: #fff;
+                background-color: #1e1e1e;
+                color: white;
+                background-image: linear-gradient(#ffffff,#ffffff) !important;
                 padding: 30px;
                 max-width: 525px;
                 margin: 0 auto;
@@ -64,7 +75,7 @@
                 color: #56BC58;
             }
                 a:hover {
-                    color: #111;
+                    color: #fff;
                 }
             @media screen and (max-width: 600px) {
                 .wrap {
@@ -73,6 +84,10 @@
                 .gutter {
                     padding: 10px;
                 }
+            }
+            @media (prefers-color-scheme: dark) {
+                .darkmode { background-color: #1e1e1e !important; }
+                .darkmode p { color: #ffffff !important; }
             }
         </style>
     </head>
