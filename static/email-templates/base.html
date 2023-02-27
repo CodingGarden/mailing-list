@@ -2,41 +2,53 @@
 <!doctype html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <meta name="color-scheme" content="light dark">
+        <meta name="supported-color-schemes" content="light dark">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
         <base target="_blank">
 
         <style>
             body {
-                background-color: #56BC58;
+                background-color: #0a0a0a !important;
+                background: linear-gradient(#0a0a0a, #0a0a0a) !important;
                 font-family: 'Helvetica Neue', 'Segoe UI', Helvetica, sans-serif;
                 font-size: 15px;
                 line-height: 26px;
                 margin: 0;
-                color: #444;
+                color: #ffffff !important;
+                -webkit-text-fill-color: #ffffff !important;
             }
-            .wrap, .darkmode, .darkmode div {
-                background-color: #1e1e1e;
-                color: white;
-                background-image: linear-gradient(#ffffff,#ffffff) !important;
+            .wrap, .darkmode, .darkmode div, [data-ogsc] .darkmode {
+                background-color: #1e1e1e !important;
+                color: #ffffff !important;
+                background: linear-gradient(#1e1e1e, #1e1e1e) !important;
+                -webkit-text-fill-color: #ffffff !important;
             }
-            .darkmode p { /* Add other selectors for other text elements */
-                color: white;
-                -webkit-text-fill-color: #fff !important;
+            .darkmode p {
+                background-color: #1e1e1e !important;
+                color: #ffffff !important;
+                background: linear-gradient(#1e1e1e, #1e1e1e) !important;
+                -webkit-text-fill-color: #ffffff !important;
             }
             
             .wrap {
-                background-color: #1e1e1e;
-                color: white;
-                background-image: linear-gradient(#ffffff,#ffffff) !important;
-                padding: 30px;
+                background-color: #1e1e1e !important;
+                color: #ffffff !important;
+                background: linear-gradient(#1e1e1e, #1e1e1e) !important;
+                -webkit-text-fill-color: #ffffff !important;
                 max-width: 525px;
                 margin: 0 auto;
                 border-radius: 5px;
+                padding: 2em 1.5em;
+      	        border: 0.25em solid #56BC58 !important;
+            	border-left: 0;
+        	border-right: 0;
+      	        border-radius: 0.25em;
             }
 
             .header {
-                border-bottom: 1px solid #eee;
+                border-bottom: 1px solid #eee !important;
                 padding-bottom: 15px;
                 margin-bottom: 15px;
             }
@@ -44,18 +56,31 @@
             .footer {
                 text-align: center;
                 font-size: 12px;
-                color: #888;
+                color: #888888 !important;
+                -webkit-text-fill-color: #888888 !important;
             }
                 .footer a {
-                    color: #888;
+                    color: #888888 !important;
+                    -webkit-text-fill-color: #888888 !important;
                 }
-
+                 .footer a:hover {
+                    color: #ffffff !important;
+                    -webkit-text-fill-color: #ffffff !important;
+                 }
+                .footer p {
+                    color: #888888 !important;
+                    background-color: #0a0a0a !important;
+                    background: linear-gradient(#0a0a0a, #0a0a0a) !important;
+                    -webkit-text-fill-color: #888888 !important;
+                }
             .gutter {
                 padding: 30px;
             }
             .button {
-                background: #56BC58;
-                color: #fff !important;
+                background-color: #56BC58 !important;
+                background: linear-gradient(#56BC58, #56BC58) !important;
+                color: #ffffff !important;
+                -webkit-text-fill-color: #ffffff !important;
                 display: inline-block;
                 border-radius: 3px;
                 padding: 10px 30px;
@@ -64,19 +89,29 @@
                 font-weight: bold;
             }
             .button:hover {
-                background: #222;
-                color: #fff;
+                background-color: #222222 !important;
+                background: linear-gradient(#222222, #222222) !important;
+                color: #ffffff !important;
+                -webkit-text-fill-color: #ffffff !important;
             }
             img {
                 max-width: 100%;
             }
 
             a {
-                color: #56BC58;
+                color: #56BC58 !important;
+                -webkit-text-fill-color: #56BC58 !important;
+                mix-blend-mode: difference;
             }
                 a:hover {
-                    color: #fff;
+                    color: #ffffff !important;
+                    -webkit-text-fill-color: #ffffff !important;
                 }
+            img {
+                mix-blend-mode: difference;
+            }
+            .gmail-blend-screen { background:#000; mix-blend-mode:screen; }
+            .gmail-blend-difference { background:#000; mix-blend-mode:difference; }
             @media screen and (max-width: 600px) {
                 .wrap {
                     max-width: auto;
@@ -85,13 +120,9 @@
                     padding: 10px;
                 }
             }
-            @media (prefers-color-scheme: dark) {
-                .darkmode { background-color: #1e1e1e !important; }
-                .darkmode p { color: #ffffff !important; }
-            }
         </style>
     </head>
-<body style="background-color: #56BC58;">
+<body style="background-color: #0a0a0a !important; background: linear-gradient(#0a0a0a, #0a0a0a) !important; color: #ffffff !important; -webkit-text-fill-color: #ffffff !important; font-family: 'Helvetica Neue', 'Segoe UI', Helvetica, sans-serif;font-size: 15px;line-height: 26px;margin: 0;">
     <div class="gutter">&nbsp;</div>
     <div class="wrap">
         <div class="header">

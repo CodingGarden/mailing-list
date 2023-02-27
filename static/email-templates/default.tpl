@@ -1,83 +1,116 @@
 <!doctype html>
 <html>
     <head>
+        <meta name="color-scheme" content="light dark">
+        <meta name="supported-color-schemes" content="light dark">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
         <base target="_blank">
 
         <style>
             body {
-                background-color: #56BC58;
+                background-color: #0a0a0a !important;
+                background: linear-gradient(#0a0a0a, #0a0a0a) !important;
                 font-family: 'Helvetica Neue', 'Segoe UI', Helvetica, sans-serif;
                 font-size: 15px;
                 line-height: 26px;
                 margin: 0;
-                color: #444;
+                color: #ffffff !important;
+                -webkit-text-fill-color: #ffffff !important;
             }
-
-            pre {
-                background: #f4f4f4f4;
-                padding: 2px;
+            .wrap, .darkmode, .darkmode div, [data-ogsc] .darkmode {
+                background-color: #1e1e1e !important;
+                color: #ffffff !important;
+                background: linear-gradient(#1e1e1e, #1e1e1e) !important;
+                -webkit-text-fill-color: #ffffff !important;
             }
-
-            table {
-                width: 100%;
-                border: 1px solid #ddd;
+            .darkmode p {
+                background-color: #1e1e1e !important;
+                color: #ffffff !important;
+                background: linear-gradient(#1e1e1e, #1e1e1e) !important;
+                -webkit-text-fill-color: #ffffff !important;
             }
-            table td {
-                border-color: #ddd;
-                padding: 5px;
-            }
-
+            
             .wrap {
-                background-color: #fff;
-                padding: 30px;
+                background-color: #1e1e1e !important;
+                color: #ffffff !important;
+                background: linear-gradient(#1e1e1e, #1e1e1e) !important;
+                -webkit-text-fill-color: #ffffff !important;
                 max-width: 525px;
                 margin: 0 auto;
                 border-radius: 5px;
+                padding: 2em 1.5em;
+      	        border: 0.25em solid #56BC58 !important;
+            	border-left: 0;
+        	border-right: 0;
+      	        border-radius: 0.25em;
             }
 
-            a.button, .button {
-                background: #56BC58;
-                border-radius: 3px;
-                text-decoration: none !important;
-                color: #fff !important;
-                font-weight: bold;
-                padding: 10px 30px;
-                display: inline-block;
-            }
-            .button:hover {
-                background: #111;
+            .header {
+                border-bottom: 1px solid #eee !important;
+                padding-bottom: 15px;
+                margin-bottom: 15px;
             }
 
             .footer {
                 text-align: center;
                 font-size: 12px;
-                color: #888;
+                color: #888888 !important;
+                -webkit-text-fill-color: #888888 !important;
             }
                 .footer a {
-                    color: #888;
-                    margin-right: 5px;
+                    color: #888888 !important;
+                    -webkit-text-fill-color: #888888 !important;
                 }
-
+                 .footer a:hover {
+                    color: #ffffff !important;
+                    -webkit-text-fill-color: #ffffff !important;
+                 }
+                .footer p {
+                    color: #888888 !important;
+                    background-color: #0a0a0a !important;
+                    background: linear-gradient(#0a0a0a, #0a0a0a) !important;
+                    -webkit-text-fill-color: #888888 !important;
+                }
             .gutter {
                 padding: 30px;
             }
-
+            .button {
+                background-color: #56BC58 !important;
+                background: linear-gradient(#56BC58, #56BC58) !important;
+                color: #ffffff !important;
+                -webkit-text-fill-color: #ffffff !important;
+                display: inline-block;
+                border-radius: 3px;
+                padding: 10px 30px;
+                text-align: center;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            .button:hover {
+                background-color: #222222 !important;
+                background: linear-gradient(#222222, #222222) !important;
+                color: #ffffff !important;
+                -webkit-text-fill-color: #ffffff !important;
+            }
             img {
                 max-width: 100%;
-                height: auto;
             }
 
             a {
-                color: #56BC58;
-            }
-            a.button {
-                color: #fff !important;
+                color: #56BC58 !important;
+                -webkit-text-fill-color: #56BC58 !important;
+                mix-blend-mode: difference;
             }
                 a:hover {
-                    color: #111;
+                    color: #ffffff !important;
+                    -webkit-text-fill-color: #ffffff !important;
                 }
+            img {
+                mix-blend-mode: difference;
+            }
+            .gmail-blend-screen { background:#000; mix-blend-mode:screen; }
+            .gmail-blend-difference { background:#000; mix-blend-mode:difference; }
             @media screen and (max-width: 600px) {
                 .wrap {
                     max-width: auto;
@@ -88,19 +121,25 @@
             }
         </style>
     </head>
-<body style="background-color: #56BC58;font-family: 'Helvetica Neue', 'Segoe UI', Helvetica, sans-serif;font-size: 15px;line-height: 26px;margin: 0;color: #444;">
+<body style="background-color: #0a0a0a !important; background: linear-gradient(#0a0a0a, #0a0a0a) !important; color: #ffffff !important; -webkit-text-fill-color: #fffff !important; font-family: 'Helvetica Neue', 'Segoe UI', Helvetica, sans-serif;font-size: 15px;line-height: 26px;margin: 0;">
     <div class="gutter" style="padding: 30px;">&nbsp;</div>
-    <div class="wrap" style="background-color: #fff;padding: 30px;max-width: 525px;margin: 0 auto;border-radius: 5px;">
-        {{ template "content" . }}
-    </div>
+      <div class="wrap" style="background-color: #1e1e1e !important; background: linear-gradient(#1e1e1e, #1e1e1e) !important; color: #ffffff !important; -webkit-text-fill-color: #fffff !important; padding: 30px;max-width: 525px;margin: 0 auto;border-radius: 5px;">
+         <div class="gmail-blend-screen">
+           <div class="gmail-blend-difference">
+              {{ template "content" . }}
+           </div>
+         </div>
+      </div>
     
-    <div class="footer" style="text-align: center;font-size: 12px;color: #fff;">
+    <div class="footer" style="text-align: center;font-size: 12px;color: #888888 !important; -webkit-text-fill-color: #888888 !important;">
         <p>
-            {{ L.T "email.unsubHelp" }}
-            <a href="{{ UnsubscribeURL }}" style="color: #eee;">{{ L.T "email.unsub" }}</a>
-            <a href="{{ MessageURL }}" style="color: #eee;">{{ L.T "email.viewInBrowser" }}</a>
+            <a href="{{ MessageURL }}" style="color: #888888 !important; -webkit-text-fill-color: #888888 !important;">{{ L.T "email.viewInBrowser" }}</a>
         </p>
-        <p>Powered by <a href="https://listmonk.app" target="_blank" style="color: #eee;">listmonk</a></p>
+        <p>
+            <p>{{ L.T "email.unsubHelp" }}</p>
+            <a href="{{ UnsubscribeURL }}" style="color: #888888 !important; -webkit-text-fill-color: #888888 !important;">{{ L.T "email.unsub" }}</a>
+        </p>
+        <p>Powered by <a href="https://listmonk.app" target="_blank" style="color: #888888 !important; -webkit-text-fill-color: #888888 !important;">listmonk</a></p>
     </div>
     <div class="gutter" style="padding: 30px;">&nbsp;{{ TrackView }}</div>
 </body>

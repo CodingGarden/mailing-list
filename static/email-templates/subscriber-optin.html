@@ -1,22 +1,25 @@
 {{ define "subscriber-optin" }}
 {{ template "header" . }}
-<h2>{{ L.Ts "email.optin.confirmSubTitle" }}</h2>
-<p>{{ L.Ts "email.optin.confirmSubWelcome" }} {{ .Subscriber.FirstName }},</p>
-<p>{{ L.Ts "email.optin.confirmSubInfo" }}</p>
-<ul>
-    {{ range $i, $l := .Lists }}
-        {{ if eq .Type "public" }}
-            <li>{{ .Name }}</li>
-        {{ else }}
-            <li>{{ L.Ts "email.optin.privateList" }}</li>
-        {{ end }}
-    {{ end }}
-</ul>
-<p>{{ L.Ts "email.optin.confirmSubHelp" }}</p>
-<p>
-    <a href="{{ .OptinURL }}" style="color: #fff !important;" class="button">{{ L.Ts "email.optin.confirmSub" }}</a>
-</p>
-<a style="color: #56BC58 !important;" href="{{ .UnsubURL }}">{{ L.T "email.unsub" }}</a>
-
+<div class="gmail-blend-screen">
+    <div class="gmail-blend-difference">
+        <h2>{{ L.Ts "email.optin.confirmSubTitle" }}</h2>
+        <p>{{ L.Ts "email.optin.confirmSubWelcome" }} {{ .Subscriber.FirstName }},</p>
+        <p>{{ L.Ts "email.optin.confirmSubInfo" }}</p>
+        <ul>
+            {{ range $i, $l := .Lists }}
+                {{ if eq .Type "public" }}
+                    <li>{{ .Name }}</li>
+                {{ else }}
+                    <li>{{ L.Ts "email.optin.privateList" }}</li>
+                {{ end }}
+            {{ end }}
+        </ul>
+        <p>{{ L.Ts "email.optin.confirmSubHelp" }}</p>
+        <p>
+            <a href="{{ .OptinURL }}" style="color: #fff !important;" class="button">{{ L.Ts "email.optin.confirmSub" }}</a>
+        </p>
+        <a style="color: #56BC58 !important;" href="{{ .UnsubURL }}">{{ L.T "email.unsub" }}</a>
+    </div>
+</div>
 {{ template "footer" }}
 {{ end }}
