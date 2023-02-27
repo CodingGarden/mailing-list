@@ -124,14 +124,14 @@
     </head>
 <body style="background-color: #0a0a0a !important; background: linear-gradient(#0a0a0a, #0a0a0a) !important; color: #ffffff !important; -webkit-text-fill-color: #ffffff !important; font-family: 'Helvetica Neue', 'Segoe UI', Helvetica, sans-serif;font-size: 15px;line-height: 26px;margin: 0;">
     <div class="gutter" style="padding: 30px;">&nbsp;</div>
-    <div class="header">
-        <center>
-            {{ if ne LogoURL "" }}
-                <img src="{{ LogoURL }}" alt="Coding Garden Logo" />
-            {{ end }}
-        </center>
-    </div>
     <div class="wrap" style="background-color: #1e1e1e !important; background: linear-gradient(#1e1e1e, #1e1e1e) !important; color: #ffffff !important; -webkit-text-fill-color: #ffffff !important; padding: 30px;max-width: 525px;margin: 0 auto;border-radius: 5px;">
+        <div class="header">
+            <center>
+                {{ if ne LogoURL "" }}
+                    <img src="{{ LogoURL }}" alt="Coding Garden Logo" />
+                {{ end }}
+            </center>
+        </div>
         <div class="gmail-blend-screen">
             <div class="gmail-blend-difference">
 {{ end }}
