@@ -1,12 +1,8 @@
 {{ define "subscriber-data" }}
 {{ template "header" . }}
-<div class="gmail-blend-screen">
-  <div class="gmail-blend-difference">
-    <h2>{{ L.Ts "email.data.title" }}</h2>
-    <p>
-      {{ L.Ts "email.data.info" }}
-    </p>
-  </div>
-</div>
+<h2>{{ L.Ts "email.data.title" }}</h2>
+<p>
+  {{ L.Ts "email.data.info" }}
+</p>
 {{ template "footer" }}
 {{ end }}
