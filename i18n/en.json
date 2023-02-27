@@ -297,7 +297,7 @@
   "public.privacyWipe": "Wipe your data",
   "public.privacyWipeHelp": "Delete all your subscriptions and related data from the database permanently.",
   "public.sub": "Subscribe",
-  "public.subConfirmed": "Thank you for subscribing! Without you... it would just be me. Use code SEEDLING10 at https://merch.coding.garden for 10% off.",
+  "public.subConfirmed": "Thank you for subscribing! Be sure to click the link in the opt-in email if you have not yet.",
   "public.subConfirmedTitle": "Confirmed",
   "public.subName": "Name",
   "public.subNotFound": "Subscription not found.",
