@@ -41,6 +41,11 @@
                                     <input id="l-{{ $l.UUID}}" type="checkbox" name="l" value="{{ $l.UUID }}" checked />
                                     <label for="l-{{ $l.UUID}}">{{ $l.Name }}</label>
                                 </li>
+                            {{ else }}
+                                <li>
+                                    <input id="l-{{ $l.UUID}}" type="checkbox" name="l" value="{{ $l.UUID }}" />
+                                    <label for="l-{{ $l.UUID}}">{{ $l.Name }}</label>
+                                </li>
                             {{ end }}
                         {{ end }}
                     </ul>
