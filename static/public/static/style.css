@@ -33,7 +33,7 @@ h4 {
   margin-bottom: 45px;
 }
 
-input[type="text"], input[type="email"], select {
+input[type="text"], input[type="email"], input[type="password"], select {
   padding: 10px 15px;
   border: 1px solid #888;
   border-radius: 3px;
@@ -50,8 +50,21 @@ input:focus::placeholder {
   color: transparent;
 }
 
+input[disabled] {
+  opacity: 0.5;
+}
+
 .center {
   text-align: center;
+}
+.right {
+  text-align: right;
+}
+.small {
+  font-size: 0.875em;
+}
+.error {
+  color: #FF5722;
 }
 a.button, .button {
   background: #56BC58;
@@ -112,18 +125,84 @@ a.button, .button {
 .row {
   margin-bottom: 20px;
 }
-.form .lists {
-  margin-top: 45px;
+.lists {
   list-style-type: none;
   padding: 0;
 }
+  .lists li {
+    margin: 0 0 5px 0;    
+  }
+  .lists .description {
+    margin: 0 0 15px 0;
+    font-size: 0.875em;
+    line-height: 1.3rem;
+    color: #888;
+    margin-left: 25px;
+  }
   .form .nonce {
     display: none;
   }
+  .form .captcha {
+    margin-top: 30px;
+  }
 
-#btn-back {
-  display: none;
+.archive {
+  list-style-type: none;
+  margin: 25px 0 0 0;
+  padding: 0;
 }
+  .archive .date {
+    display: block;
+    color: #666;
+    font-size: 0.875em;
+  }
+  .archive li {
+    margin-bottom: 15px;
+  }
+  .feed {
+    margin-right: 15px;
+  }
+
+.home-options {
+  margin-top: 30px;
+}
+  .home-options a {
+    margin: 0 7px;
+  }
+
+.pagination {
+  margin-top: 30px;
+  text-align: center;
+}
+  .pg-page {
+    display: inline-block;
+    padding: 0 10px;
+    text-decoration: none;
+  }
+  .pg-page.pg-selected {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+.login .submit {
+  margin-top: 20px;
+}
+  .login button {
+    width: 100%;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .login button img {
+    max-width: 24px;
+    margin-right: 10px;
+  }
+  .login input[name=totp_code] {
+    font-size: 2em;
+    letter-spacing: 5px;
+    text-align: center;
+  }
 
 footer.container {
   margin-top: 15px;

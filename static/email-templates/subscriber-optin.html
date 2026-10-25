@@ -16,6 +16,6 @@
 <p>
     <a href="{{ .OptinURL }}" style="color: #fff !important;" class="button">{{ L.Ts "email.optin.confirmSub" }}</a>
 </p>
-<a style="color: #56BC58 !important;" href="{{ .UnsubURL }}">{{ L.T "email.unsub" }}</a>
+<a style="color: #56BC58 !important;" href="{{ .UnsubURL }}?manage=true">{{ L.T "email.unsub" }}</a>
 {{ template "footer" }}
 {{ end }}
